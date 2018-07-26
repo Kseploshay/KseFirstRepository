@@ -1,0 +1,95 @@
+.menu{
+	color:white;
+	font-size:13px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: space-between;
+	width: 400px;
+	list-style: none;
+	margin: 20px 50px 0 0
+}
+
+.header {
+	display: flex;
+	justify-content: space-between; 
+}
+
+.background-image{
+	background-image: url(./images/background.jpg);
+	height: 890px;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+.logo{margin: 20px 0 0 10px}
+
+.title {
+	color: white;
+text-transform: uppercase;
+font-size: 40px;
+margin: 300px 0 0 40px;
+}
+
+.subtitle {
+	color: white;
+	text-transform: uppercase;
+	font-size: 15px;
+	margin: 10px 0 0 40px
+}
+
+.main {
+	background-color:#a2ca28;
+	padding-top: 100px;
+}
+
+.benefits {
+	list-style: none;
+	display: flex;
+	color: white;
+	font-size: 14px;
+	margin:0 0 50px 0;
+	padding: 0 0 0 0 
+	 }
+
+.benefit-title{
+	font-size: 24px
+}
+
+.benefits-link {color: white}
+
+.philosophy-block {
+	display: flex;
+	justify-content: center;
+	margin: 0 100px 0 100px;
+}
+
+
+.philosophy-text {
+	background-color: white;
+	text-align: center;
+	color: #656e74;
+	padding: 15px 15px 15px 15px
+}
+
+
+.philosophy-h3 {
+	font-size: 14px;
+	color:#fd634e;
+	text-transform: uppercase;
+}
+
+.philosophy-h2 
+{
+	font-size: 35px;
+	color: #a2ca28;
+	text-transform: uppercase;
+}
+
+.philosophy-link
+{
+	color: #a2ca28
+}
+
+
+
+
