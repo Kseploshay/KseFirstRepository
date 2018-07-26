@@ -47,7 +47,7 @@ margin: 300px 0 0 40px;
 	display: flex;
 	color: white;
 	font-size: 14px;
-	margin:0 100px 50px 100px;
+	margin:0 0 50px 0;
 	padding: 0 0 0 0 
 	 }
 
@@ -57,26 +57,14 @@ margin: 300px 0 0 40px;
 
 .benefits-link {color: white}
 
-.philosophy-block1 {
+.philosophy-block {
 	display: flex;
 	justify-content: center;
 	margin: 0 100px 0 100px;
 }
 
-.philosophy-text1 {
-	background-color: white;
-	text-align: center;
-	color: #656e74;
-	padding: 15px 15px 15px 15px
-}
 
-.philosophy-block2 {
-	display: flex;
-	justify-content: center;
-    margin:0 100px 0 100px 
-}
-
-.philosophy-text2 {
+.philosophy-text {
 	background-color: white;
 	text-align: center;
 	color: #656e74;
