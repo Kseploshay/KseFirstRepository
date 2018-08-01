@@ -5,7 +5,11 @@
   <title>Document</title>
   <meta name="keywords" content="fitness" />
   <meta name="decription" content="description from SEO colleagues" />
+  <link rel="stylesheet" href="./eric-meyer-reset.min_.css">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script type="text/javascript" url="script.js"></script>
 </head>
 
@@ -33,26 +37,35 @@
 
 		<section>
 			<ul class="benefits">
-			<li>
-				<img src="./images/icon1.svg">
+			<li class="benefits-item">
+				<div class="benefits-image">
+					<img src="./images/icon1.svg">
+				</div>
 				<h2 class="benefit-title">Resources</h2>
-				<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable Client groups. Easily manage your inspiration and </p>
-				<a class="benefits-link" href="">Explore more</a>
+				<p class="benefits-text">Easily manage your inspiration and work-in-progress by dragging images into projects and sharable Client groups. Easily manage your inspiration and</p>
+				<a class="benefits-link" href="">Explore more→</a>
 			</li>
-			<li>	
-				<img src="./images/icon2.svg">
+			<li class="benefits-item">	
+				<div class="benefits-image">
+					<img src="./images/icon2.svg">
+				</div>
 				<h2 class="benefit-title">Training & Funding</h2>
-				<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable Client groups. Easily manage your inspiration and</p>
-				<a class="benefits-link" href="">Browse training</a></li>
-			<li><img src="./images/icon3.svg">
+				<p class="benefits-text">Easily manage your inspiration and work-in-progress by dragging images into projects and sharable Client groups. &nbsp;&nbsp;</p>
+				<a class="benefits-link" href="">Browse training→</a></li>
+			<li class="benefits-item">
+				<div class="benefits-image">
+				<img src="./images/icon3.svg">
+			</div>
 				<h2 class="benefit-title">Connect</h2>
-				<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable Client groups. Easily manage your inspiration and </p>
-				<a class="benefits-link" href="">Connect now</a></li></li>
-			<li>
-				<img src="./images/icon4.svg">
+				<p class="benefits-text">Easily manage your inspiration and work-in-progress by dragging images into projects and sharable Client groups. Easily manage your inspiration.</p>
+				<a class="benefits-link" href="">Connect now→</a></li></li>
+			<li class="benefits-item">
+				<div class="benefits-image">
+					<img src="./images/icon4.svg">
+				</div>
 				<h2 class="benefit-title" >Communicate</h2>
-				<p>Easily manage your inspiration and work-in-progress by dragging images into projects and sharable Client groups. Easily manage your inspiration and </p>
-				<a class="benefits-link" href="">Start now</a></li></li>
+				<p class="benefits-text">Easily manage your inspiration and work-in-progress by dragging images into projects and sharable Client groups. Easily</p>
+				<a class="benefits-link" href="">Start now→</a></li></li>
 		</ul>
 		</section>
 	
@@ -60,20 +73,33 @@
 		<div class="philosophy-text">
 			<h3 class="philosophy-h3">It's all about</h3>
 			<h2 class="philosophy-h2">Fitness first</h2>
-		<img src="./images/icon5.svg" width="20">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+			<img class="icon-drop" src="./images/icon5.svg" width="20">
+			<p class="philosophy-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
 			<a class="philosophy-link" href="">Read more</a>
 		</div>
-		<img src="images/img1.jpg">
+		<div class="image-hover">
+			<img src="images/img1.jpg">
+			<div class="text-hover">
+				<h3 class="philosophy-h3">It's all about</h3>
+				<h2 class="philosophy-h2">Fitness first</h2>
+			</div>
+		</div>
 	</section>
 	
 	<section class="philosophy-block">
-		<img src="./images/img2.jpg">
+		<div class="image-hover">
+			<img src="./images/img2.jpg"> 
+			<div class="text-hover">
+				<h3 class="philosophy-h3">Love your</h3>
+				<h2 class="philosophy-h2">Your body</h2>	
+			</div>
+		</div>
+
 	<div class="philosophy-text" >
 		<h3 class="philosophy-h3">Love your</h3>
 			<h2 class="philosophy-h2">Your body</h2>
-			<img src="./images/icon5.svg" width="20">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+			<img class="icon-drop" src="./images/icon5.svg" width="20">
+			<p class="philosophy-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
 			<a class="philosophy-link" href="">Read more</a>
 	</div>
 	
@@ -81,16 +107,16 @@
 
 	</main>
 
-	<footer>
+	<footer class=footer-whole>
 
-		<section>
+		<section class="footer">
 			<form>
-				<input type="text" placeholder="Your name" ="">
-				<input type="text" placeholder="Your E-mail"="">
-				<button>Join newsletter</button>
+				<input class=input type="text" placeholder="Your Name" ="">
+				<input class=input type="text" placeholder="Your E-mail"="">
+				<button class="button">Join Newsletter</button>
 			</form>
 		
-			<ul>
+			<ul class="social-networks">
 				<li>
 					<a href="#">
 						<img src="./images/fb.png"/></a>	
