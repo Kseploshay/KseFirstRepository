@@ -20,8 +20,19 @@
     font-weight: 600
 }
 
+@keyframes MyRotation {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.body {
+    min-width: 1000px;
+} 
+
 .menu {
-    color: white;
     font-size: 13px;
     text-transform: uppercase;
     display: flex;
@@ -35,13 +46,16 @@
 .header {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .background-image {
     background-image: url(./images/background.jpg);
     height: 890px;
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
+    color: white;
+    text-transform: uppercase;
 }
 
 .logo {
@@ -49,16 +63,12 @@
 }
 
 .title {
-    color: white;
-    text-transform: uppercase;
     font-size: 40px;
     margin: 600px 0 0 40px;
     font-family: Avenir Next;
 }
 
 .subtitle {
-    color: white;
-    text-transform: uppercase;
     font-size: 15px;
     margin: 10px 0 0 40px;
     font-family: 'Open Sans', sans-serif;
@@ -107,6 +117,7 @@
     color: white;
     font-family: Proxima Nova;
     line-height: 26px;
+    text-decoration: none;
 }
 
 .philosophy-block {
@@ -121,14 +132,14 @@
 .philosophy-text {
     background-color: white;
     text-align: center;
-    color: #656e74;
-    padding: 50px 50px 50px 50px
+    padding: 50px;
 }
 
 .philosophy-paragraph {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 26px;
+    color: #656e74;
 }
 
 .icon-drop {
@@ -140,6 +151,7 @@
     color: #fd634e;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
+    line-height: 26px;
 }
 
 .philosophy-h2 {
@@ -148,6 +160,7 @@
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    line-height: 30px;
 }
 
 .philosophy-link {
@@ -155,7 +168,6 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
 }
-
 
 .image-hover {
     width: 794px;
@@ -165,22 +177,34 @@
 
 .image-hover:before {
     content: " ";
-    display: block;
+    opacity: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
     z-index: 1;
+    display: block;
+    transition: all 1s;
 }
 
 .text-hover {
     position: absolute;
-    top: 150px;
-    left: 300px;
+    width: 100%;
+    top: 50%;
+    margin-top: -28px;
     text-align: center;
-    z-index: 2
+    z-index: 2;
+    opacity: 0;
+    transition: all 1s;
 }
 
+.image-hover:hover .text-hover {
+    opacity: 1;
+}
+
+.image-hover:hover:before {
+    opacity: 1;
+}
 
 .footer-whole {
     background-color: #000;
@@ -191,17 +215,27 @@
     justify-content: space-around;
     padding-top: 60px;
     padding-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto;
+    margin 0 auto;
     width: 1194px;
 }
 
 .input {
     font-family: Proxima Nova;
     font-size: 14px;
-    padding: 10px 10px 10px 10px
+    padding: 10px;
+    height: 25px;
+    border: none;
+    border-radius: 1px;
+   
 }
 
+.input-your-name {
+    width: 201px;
+}
+
+.input-your-email {
+    width: 340px;
+}
 
 .button {
     font-family: Proxima Nova;
@@ -209,7 +243,12 @@
     font-weight: 600;
     color: white;
     background-color: #a2ca28;
-    padding: 12px 10px 12px 10px;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 1px;
+    width: 182px;
+    height: 49px;
+    position: relative;
 }
 
 .social-networks {
@@ -218,6 +257,73 @@
     width: 245px;
 }
 
-.sn-icon {
-    height: 50px
+.social-button {
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    
 }
+
+.social-button:hover {
+    animation: MyRotation 0.3s;
+    }
+
+ .social-button:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+ }
+
+ .social-button-fb {
+        background: #2e3192;
+ }
+
+ .social-button-fb:before {
+    background: url(./images/fb.png);
+    background-size: 11px 19px;
+    width: 11px;
+    height:19px; 
+    margin:-9.5px -5.5px;
+ }
+
+  .social-button-tw {
+        background: #33a8e1;
+ }
+
+  .social-button-tw:before {
+    background: url(./images/tw.png);
+    background-size: 19px 16px;
+    width: 19px;
+    height:16px; 
+    margin: -8px -9.5px;
+ }
+
+ .social-button-yt {
+        background:#e04c43;
+ }
+
+  .social-button-yt:before {
+    background: url(./images/yt.png);
+    background-size: 21px 16px;
+    width: 21px;
+    height:16px; 
+    margin: -8px -10.5px;
+ }
+
+ .social-button-li {
+        background:#3d4781;
+ }
+
+ .social-button-li:before {
+    background: url(./images/ln.png);
+    background-size: 19px 19px;
+    width: 19px;
+    height:19px; 
+    margin:-9.9px;
+ }
