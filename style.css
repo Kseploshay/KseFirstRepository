@@ -21,16 +21,23 @@
 }
 
 @keyframes MyRotation {
-    0% {transform: rotate(0deg);}
-    25% {transform: rotate(90deg);}
-    50% {transform: rotate(180deg);}
-    75% {transform: rotate(270deg);}
-    100% {transform: rotate(360deg);}
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-.body {
-    min-width: 1600px;
-} 
 
 .menu {
     font-size: 13px;
@@ -50,7 +57,6 @@
 .header {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .background-image {
@@ -248,11 +254,10 @@
 .input {
     font-family: Proxima Nova;
     font-size: 14px;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
     height: 25px;
     border: none;
     border-radius: 2px;
-   
 }
 
 .input-your-name {
@@ -294,9 +299,9 @@
 
 .social-button:hover {
     animation: MyRotation 0.3s;
-    }
+}
 
- .social-button:before {
+.social-button:before {
     content: "";
     display: block;
     position: absolute;
@@ -304,52 +309,52 @@
     top: 50%;
     text-align: center;
     left: 50%;
- }
+}
 
- .social-button-fb {
-        background: #2e3192;
- }
+.social-button-fb {
+    background: #2e3192;
+}
 
- .social-button-fb:before {
+.social-button-fb:before {
     background: url(./images/fb.png);
     background-size: 11px 19px;
     width: 11px;
-    height:19px; 
-    margin:-9.5px -5.5px;
- }
+    height: 19px;
+    margin: -9.5px -5.5px;
+}
 
-  .social-button-tw {
-        background: #33a8e1;
- }
+.social-button-tw {
+    background: #00aeef;
+}
 
-  .social-button-tw:before {
+.social-button-tw:before {
     background: url(./images/tw.png);
     background-size: 19px 16px;
     width: 19px;
-    height:16px; 
+    height: 16px;
     margin: -8px -9.5px;
- }
+}
 
- .social-button-yt {
-        background:#e04c43;
- }
+.social-button-yt {
+    background: #ed3123;
+}
 
-  .social-button-yt:before {
+.social-button-yt:before {
     background: url(./images/yt.png);
     background-size: 21px 16px;
     width: 21px;
-    height:16px; 
+    height: 16px;
     margin: -8px -10.5px;
- }
+}
 
- .social-button-li {
-        background:#3d4781;
- }
+.social-button-li {
+    background: #171a8f;
+}
 
- .social-button-li:before {
+.social-button-li:before {
     background: url(./images/ln.png);
     background-size: 19px 19px;
     width: 19px;
-    height:19px; 
-    margin:-9.9px;
- }
+    height: 19px;
+    margin: -9.9px;
+}
